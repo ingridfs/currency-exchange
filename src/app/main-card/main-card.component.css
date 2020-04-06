@@ -1,0 +1,11 @@
+.main-content {
+  width: 530px;
+  height: 500px;
+  background-color: rgb(90, 99, 108);
+}
+
+.card-text {
+  display: flex;
+  justify-content: center;
+}
+
