@@ -1,9 +1,9 @@
 <div>
-    <input class="inputField" type="number" (keyup)= "getFirstAmount($event)"> 
-    <input class="inputField" type="number" (keyup)= "getSecondAmount($event)"> 
-    <p>
-        {{ result }}
-    </p>
+  <label>U$</label>
+  <input class="inputField" type="number" (keyup)= "calculate($event)"> 
+
+  <label>R$</label>
+  <input class="inputField" type="number" value="{{ result }}"> 
 </div>
 
 

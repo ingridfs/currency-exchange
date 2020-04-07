@@ -9,31 +9,22 @@ import { AnimationDurations } from '@angular/material/core';
 })
 export class CalculatorComponent implements OnInit {
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {}
 
-  firstAmount:number;
-  secondAmount:number;
-  result:any;
+  amount:any;
+  currency:number;
+  result:number;
   
-  getFirstAmount(event){
-      return this.firstAmount = event.target.value;  
-         
-    }
-
-  getSecondAmount(event){
-      return this.secondAmount = event.target.value;
-       
-    }
-
-  calculate() {
-    this.result = this.getFirstAmount(event) * this.getSecondAmount(event);
-    console.log(this.result);
-     
-    }
-    
+  calculate(event) { 
+    this.amount = Number(event.target.value);
+    this.currency = 5.24;
+    this.result = this.currency * this.amount;
+    return this.result.toFixed(2);
   }
+    
+}
   
 
 
