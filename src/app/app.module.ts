@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { MainCardComponent } from './main-card/main-card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainCardComponent
+    MainCardComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
