@@ -9,10 +9,10 @@ import { MainCardComponent } from './main-card/main-card.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 
 //Material
+import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
-import { MatTabsModule } from '@angular/material/tabs';
-import {MatCardModule} from '@angular/material/card';
-import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatInputModule,
     MatCardModule,
     MatFormFieldModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

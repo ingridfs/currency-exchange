@@ -13,6 +13,7 @@ export class CalculatorComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  empty:string = "";
   amount:any;
   currency:number;
   result:number;

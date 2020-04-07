@@ -1,10 +1,10 @@
 .main-content {
   width: 530px;
   height: 500px;
-  background-color: #f4eeff;
+  background-color: #363062;
   border-radius: 10px;
   box-shadow: 6px 7px 10px 1px rgba(0, 0, 0, 0.2);
-  color: #000;
+  color: rgb(205, 201, 201);
 }
 
 .card-title {

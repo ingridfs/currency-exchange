@@ -1,13 +1,32 @@
 <div>
-  <label>U$</label>
-  <input class="inputField" type="number" (keyup)= "calculate($event)"> 
+  <form class="form-container">
+    <div class="form-field-itens">
+      <mat-form-field>
+        <mat-select>
+          <mat-option value="RS">R$</mat-option>
+          <mat-option value="US">U$</mat-option>
+          <mat-option value="EU">&euro;</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appereance="fill">
+        <input matInput class="input-field" type="number" (keyup)=" $event != empty ? calculate($event) : value = 'result' " >
+        <!--*ngIF="empty  then emptyInput else fullInput"
+          <ng-template #emptyInput value={{result}}></ng-template>
+          <ng-template #fullInput (keyup)="calculate($event)"></ng-template> -->
+      </mat-form-field>
+    </div>
 
-  <label>R$</label>
-  <input class="inputField" type="number" value="{{ result }}"> 
+    <div class="form-field-itens">
+      <mat-form-field>
+        <mat-select>
+          <mat-option value="RS">R$</mat-option>
+          <mat-option value="US">U$</mat-option>
+          <mat-option value="EU">&euro;</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appereance="fill">
+        <input matInput class="input-field" type="number" value="{{result}}">
+      </mat-form-field>
+    </div>
+  </form>
 </div>
-
-
-<!--<mat-form-field>
-    <mat-label>R$</mat-label>
-    <input matInput>
-</mat-form-field>-->
