@@ -8,6 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MainCardComponent } from './main-card/main-card.component';
 import {MatCardModule} from '@angular/material/card';
 import { CalculatorComponent } from './calculator/calculator.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CalculatorComponent } from './calculator/calculator.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

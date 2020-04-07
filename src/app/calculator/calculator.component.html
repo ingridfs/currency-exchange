@@ -1,1 +1,13 @@
-<p>calculator works!</p>
+<div>
+    <input class="inputField" type="number" (keyup)= "getFirstAmount($event)"> 
+    <input class="inputField" type="number" (keyup)= "getSecondAmount($event)"> 
+    <p>
+        {{ result }}
+    </p>
+</div>
+
+
+<!--<mat-form-field>
+    <mat-label>R$</mat-label>
+    <input matInput>
+</mat-form-field>-->
