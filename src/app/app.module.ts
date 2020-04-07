@@ -5,17 +5,22 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatInputModule } from '@angular/material/input';
-
+import { MainCardComponent } from './main-card/main-card.component';
+import {MatCardModule} from '@angular/material/card';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainCardComponent,
+    CalculatorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

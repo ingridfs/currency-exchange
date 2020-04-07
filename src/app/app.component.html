@@ -1,34 +1,9 @@
 
-<style>
-
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color:#32CD32;
-    color: white;
-    font-weight: 600;
-  }
-
-  .toolbar img {
-    margin: 0 16px;
-  }
-</style>
-
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
-  
-  <span>Currency converter</span>
-    <div class="spacer"></div>
+
+
+<!-- Main Content -->
+<div class="container" role="main">
+  <app-main-card></app-main-card>
+  <router-outlet></router-outlet>
 </div>
-
-<mat-label>R$</mat-label>
-<mat-form-field>
-  <input  matInput>
-</mat-form-field>
-
-<router-outlet></router-outlet>

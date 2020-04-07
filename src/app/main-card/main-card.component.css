@@ -1,0 +1,18 @@
+.main-content {
+  width: 530px;
+  height: 500px;
+  background-color: #f4eeff;
+  border-radius: 10px;
+  box-shadow: 6px 7px 10px 1px rgba(0, 0, 0, 0.2);
+  color: #000;
+}
+
+.card-title {
+  padding: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+
