@@ -7,9 +7,31 @@
 .form-field-itens {
   display: flex;
   justify-content: space-around;
+  margin-top: 30px;
+}
+
+.form-field-itens label {
+  font-size: xx-large;
 }
 
 .input-field {
   display: block;
-  color: #fff;
+  height: 30px;
+  width: 200px;
+  font-size: xx-large;
 }
+
+.form-field-currency {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-field-currency a:hover{
+  cursor: pointer;
+}
+
+.form-field-currency img{
+  width: 118px;
+  height: 102px;
+}
+
