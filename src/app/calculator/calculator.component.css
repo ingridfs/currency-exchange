@@ -1,3 +1,15 @@
-.inputField {
-    display: block;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.form-field-itens {
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-field {
+  display: block;
+  color: #fff;
 }
