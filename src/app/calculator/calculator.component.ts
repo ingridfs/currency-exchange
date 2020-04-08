@@ -14,21 +14,21 @@ export class CalculatorComponent implements OnInit {
   ngOnInit(): void {}
 
   firstAmount:number;
-  secondAmount:number;
-  result:any;
+  secondAmount:number = 5.25;
+  result:number;
   
-  getFirstAmount(event){
+    getFirstAmount(event){
       return this.firstAmount = event.target.value;  
          
     }
-
+/*
   getSecondAmount(event){
       return this.secondAmount = event.target.value;
        
     }
-
+*/
   calculate() {
-    this.result = this.getFirstAmount(event) * this.getSecondAmount(event);
+    this.result = this.firstAmount * this.secondAmount;
     console.log(this.result);
      
     }
