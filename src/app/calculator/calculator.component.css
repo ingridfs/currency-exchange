@@ -17,8 +17,9 @@
 .input-field {
   display: block;
   height: 30px;
-  width: 200px;
+  width: 180px;
   font-size: xx-large;
+  border-radius: 10px;
 }
 
 .form-field-currency {
@@ -33,5 +34,6 @@
 .form-field-currency img{
   width: 118px;
   height: 102px;
+  fill:#fff;
 }
 

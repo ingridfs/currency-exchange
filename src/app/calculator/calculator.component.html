@@ -1,15 +1,15 @@
 <div>
-  <form [formGroup]="formData" (keyup)="calculate($event)" class="form-container">
-    <div class="form-field-currency">
-      <a formControlName="dollar"><img src="../assets/Dollar.svg"></a>
-      <a  formControlName="euro"><img src="../assets/Euro.svg"></a>
-      <a  formControlName="pound"><img src="../assets/Pound.svg"></a>
+  <form class="form-container">
+    <div class="form-field-currency"> 
+      <a><img src="../assets/Dollar.svg"></a>
+      <a><img src="../assets/Euro.svg"></a>
+      <a><img src="../assets/Pound.svg"></a>
     </div>
     <div class="form-field-itens">
-      <label>R$</label>
-      <input class="input-field" type="number" formControlName="firstAmount"  >
+      <label>BRL</label>
+      <input class="input-field" type="number" (keyup)="realCurrencyCalc($event)" value="{{ resultCurrency }}">
       <label>{{ currencyName }}</label>
-      <input class="input-field" type="number" formControlName="secondAmount" value="{{result}}" >
+      <input class="input-field" type="number" (keyup)="currencyRealCalc($event)" value="{{ resultReal }}" >
     </div>
   </form>
 </div>
