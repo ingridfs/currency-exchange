@@ -3,26 +3,6 @@
   flex-direction: column;
 }
 
-.form-field-itens {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  margin-top: 30px;
-}
-
-.form-field-itens label {
-  font-size: x-large;
-}
-
-.input-field {
-  display: block;
-  height: 30px;
-  width: 180px;
-  font-size: x-large;
-  border-radius: 10px;
-}
-
 .form-field-currency {
   display: flex;
   justify-content: space-around;
@@ -38,3 +18,21 @@
   fill:#fff;
 }
 
+.form-field-itens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.form-field-itens label {
+  font-size: x-large;
+}
+
+.input-field {
+  display: block;
+  height: 30px;
+  width: 180px;
+  font-size: x-large;
+  border-radius: 10px;
+}

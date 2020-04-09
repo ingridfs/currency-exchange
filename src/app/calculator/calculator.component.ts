@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Pipe } from '@angular/core';
 
 @Component({
   selector: 'app-calculator',
@@ -18,13 +19,13 @@ export class CalculatorComponent implements OnInit {
   
   ngOnInit() {
     this.currencyRate = 5.12;
-    this.currencyName = "Dólar";
+    this.currencyName = "Dólar Americano";
     this.currencySign = "USD";
   }
 
   dollar() {
     this.currencyRate = 5.12;
-    this.currencyName = "Dólar";
+    this.currencyName = "Dólar Americano";
     this.currencySign = "USD";
   }
 

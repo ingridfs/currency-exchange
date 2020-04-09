@@ -11,9 +11,15 @@
     </a>
   </div>
   <div class="form-field-itens">
-    <label>BRL - Real</label>
-    <input class="input-field" type="number" (keyup)="realCurrencyCalc($event)" value="{{resultCurrency}}">
-    <label>{{currencySign}} - {{currencyName}}</label>
-    <input class="input-field" type="number" (keyup)="currencyRealCalc($event)" value="{{resultReal}}" >
+    <mat-form-field appearance="fill">
+      <mat-label>Real</mat-label>
+      <input matInput class="input-field" type="number" (keyup)="realCurrencyCalc($event)" value="{{ resultCurrency }}">
+      <span matPrefix>BRL&nbsp;&nbsp;</span>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>{{currencyName}}&nbsp;&nbsp;</mat-label>
+      <input matInput class="input-field" type="number"  (keyup)="currencyRealCalc($event)" value="{{ resultReal }}">
+      <span matPrefix>{{currencySign}}&nbsp;</span>
+    </mat-form-field>
   </div>
 </form>
