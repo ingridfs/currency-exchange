@@ -1,15 +1,19 @@
-<div>
-  <form class="form-container">
-    <div class="form-field-currency"> 
-      <a><img src="../assets/Dollar.svg"></a>
-      <a><img src="../assets/Euro.svg"></a>
-      <a><img src="../assets/Pound.svg"></a>
-    </div>
-    <div class="form-field-itens">
-      <label>BRL</label>
-      <input class="input-field" type="number" (keyup)="realCurrencyCalc($event)" value="{{ resultCurrency }}">
-      <label>{{ currencyName }}</label>
-      <input class="input-field" type="number" (keyup)="currencyRealCalc($event)" value="{{ resultReal }}" >
-    </div>
-  </form>
-</div>
+<form class="form-container">
+  <div class="form-field-currency"> 
+    <a href="#dollar" (click)="dollar()">
+      <img src="../assets/Dollar.svg">
+    </a>
+    <a href="#euro" (click)="euro()">
+      <img src="../assets/Euro.svg">
+    </a>
+    <a href="#pound" (click)="pound()">
+      <img src="../assets/Pound.svg">
+    </a>
+  </div>
+  <div class="form-field-itens">
+    <label>BRL - Real</label>
+    <input class="input-field" type="number" (keyup)="realCurrencyCalc($event)" value="{{resultCurrency}}">
+    <label>{{currencySign}} - {{currencyName}}</label>
+    <input class="input-field" type="number" (keyup)="currencyRealCalc($event)" value="{{resultReal}}" >
+  </div>
+</form>

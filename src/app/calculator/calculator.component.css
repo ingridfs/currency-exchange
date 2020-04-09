@@ -1,24 +1,25 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  color: #fff;
 }
 
 .form-field-itens {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+
   margin-top: 30px;
 }
 
 .form-field-itens label {
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .input-field {
   display: block;
   height: 30px;
   width: 180px;
-  font-size: xx-large;
+  font-size: x-large;
   border-radius: 10px;
 }
 
