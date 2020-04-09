@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Pipe } from '@angular/core';
+import { CurrencyService } from '../currency.service';
+
 
 @Component({
   selector: 'app-calculator',
@@ -9,18 +10,26 @@ import { Pipe } from '@angular/core';
 export class CalculatorComponent implements OnInit {
   
   amount:any;
+  currencyExchanges:any;
   currencyRate:number;
   currencyName:string;
   currencySign:string;
   resultReal:number;
   resultCurrency:number;
 
-  constructor() {}
+  constructor(private currency:CurrencyService) {}
   
   ngOnInit() {
+    this.currency.getCurrency().subscribe(
+      (response) => {
+         this.currencyExchanges = new Object (response);
+        console.log(this.currencyExchanges);
+      }
+      );
     this.currencyRate = 5.12;
     this.currencyName = "Dólar Americano";
     this.currencySign = "USD";
+    
   }
 
   dollar() {
