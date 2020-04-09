@@ -22,18 +22,18 @@ export class CalculatorComponent implements OnInit {
   ngOnInit() {
     this.currency.getCurrency().subscribe(
       (response) => {
-         this.currencyExchanges = new Object (response);
-        console.log(this.currencyExchanges);
+        this.currencyExchanges = new Object (response);
+        console.log(this.currencyExchanges.rates.USD);
+        this.currencyRate = Number(this.currencyExchanges.rates.USD.toFixed(2));
+        console.log(this.currencyRate);
       }
       );
-    this.currencyRate = 5.12;
-    this.currencyName = "Dólar Americano";
     this.currencySign = "USD";
-    
+    this.currencyName = "Dólar Americano";
   }
 
   dollar() {
-    this.currencyRate = 5.12;
+    this.currencyRate = 5.12;   
     this.currencyName = "Dólar Americano";
     this.currencySign = "USD";
   }

@@ -7,7 +7,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 })
 export class CurrencyService {
 
-  private url = 'https://api.exchangeratesapi.io/latest';
+  private url = 'https://api.exchangeratesapi.io/latest?base=BRL';
 
   constructor(private http:HttpClient) { }
 
