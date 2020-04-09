@@ -7,12 +7,12 @@ import { CurrencyService } from '../currency.service';
   templateUrl: './calculator.component.html',
   styleUrls: ['./calculator.component.css']
 })
+
 export class CalculatorComponent implements OnInit {
   
   amount:any;
   currencyExchanges:any;
   currencyRate:number;
-  currencyName:string;
   currencySign:string;
   resultReal:number;
   resultCurrency:number;
@@ -21,44 +21,36 @@ export class CalculatorComponent implements OnInit {
   
   ngOnInit() {
     this.currency.getCurrency().subscribe(
-      (response) => {
+        (response) => {
         this.currencyExchanges = new Object (response);
-        console.log(this.currencyExchanges.rates.USD);
-        this.currencyRate = Number(this.currencyExchanges.rates.USD.toFixed(2));
-        console.log(this.currencyRate);
-      }
-      );
-    this.currencySign = "USD";
-    this.currencyName = "Dólar Americano";
+        this.currencyRate = this.currencyExchanges.rates['USD'].toFixed(2);
+        this.currencySign = 'USD';
+        }
+      ); 
   }
 
-  dollar() {
-    this.currencyRate = 5.12;   
-    this.currencyName = "Dólar Americano";
-    this.currencySign = "USD";
-  }
-
-  euro() {
-    this.currencyRate = 5.57;
-    this.currencyName = "Euro";
-    this.currencySign = "EUR";
-  }
-
-  pound() {
-    this.currencyRate = 6.36;
-    this.currencyName = "Libra";
-    this.currencySign = "BGP";
+  selectedCurrency(coin){
+    console.log(coin);
+    this.currencyRate = this.currencyExchanges.rates[coin].toFixed(2);
+    console.log(this.currencyRate);
+    this.currencySign = coin;
+    console.log(coin);
+    
   }
 
   realCurrencyCalc(event){ 
     this.amount = Number(event.target.value);
-    this.resultReal = this.amount / this.currencyRate;
+    console.log(this.amount);
+    this.resultReal = this.amount * this.currencyRate;
+    console.log(this.resultReal);
     return this.resultReal.toFixed(2);
   }
   
   currencyRealCalc(event){ 
-    this.amount = Number(event.target.value); 
-    this.resultCurrency = this.amount * this.currencyRate;
+    this.amount = Number(event.target.value);
+    console.log(this.amount);
+    this.resultCurrency = this.amount / this.currencyRate;
+    console.log(this.resultCurrency);
     return this.resultCurrency.toFixed(2);
   }
     

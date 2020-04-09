@@ -1,24 +1,24 @@
 <form class="form-container">
   <div class="form-field-currency"> 
-    <a href="#dollar" (click)="dollar()">
+    <a href="#dollar" (click)="selectedCurrency('USD')">
       <img src="../assets/usa-2.svg">
     </a>
-    <a href="#euro" (click)="euro()">
+    <a href="#euro" (click)="selectedCurrency('EUR')">
       <img src="../assets/euro-2.svg">
     </a>
-    <a href="#pound" (click)="pound()">
+    <a href="#pound" (click)="selectedCurrency('GBP')">
       <img src="../assets/uk-2.svg">
     </a>
   </div>
   <div class="form-field-itens">
     <mat-form-field appearance="fill">
-      <mat-label>Real</mat-label>
-      <input matInput class="input-field" type="number" (keyup)="realCurrencyCalc($event)" value="{{resultCurrency}}">
+      <mat-label>BRL</mat-label>
+      <input matInput class="input-field" type="number" (keyup)="realCurrencyCalc($event)" value="{{ resultCurrency }}">
       <span matPrefix>BRL&nbsp;&nbsp;</span>
     </mat-form-field>
     <mat-form-field appearance="fill">
-      <mat-label>{{currencyName}}&nbsp;&nbsp;</mat-label>
-      <input matInput class="input-field" type="number" (keyup)="currencyRealCalc($event)" value="{{resultReal}">
+      <mat-label>{{currencySign}}&nbsp;&nbsp;</mat-label>
+      <input matInput class="input-field" type="number" (keyup)="currencyRealCalc($event)" value="{{ resultReal }}">
       <span matPrefix>{{currencySign}}&nbsp;</span>
     </mat-form-field>
   </div>
