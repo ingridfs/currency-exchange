@@ -10,12 +10,19 @@
 
 .form-field-currency a:hover{
   cursor: pointer;
+  fill:pink;
 }
 
+.form-field-currency img:hover{
+  cursor: pointer;
+  color: red;
+}
+
+
 .form-field-currency img{
-  width: 118px;
-  height: 102px;
-  fill:#fff;
+  width: 73px;
+  height: 73px;
+  padding: 10px;
 }
 
 .form-field-itens {
