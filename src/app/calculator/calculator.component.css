@@ -5,29 +5,27 @@
 
 .form-field-currency {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 100px;
+  margin: 20px 0 20px 0;
 }
 
-.form-field-currency a:hover{
-  cursor: pointer;
-  fill:pink;
-}
-
-.form-field-currency img:hover{
-  cursor: pointer;
-  color: red;
-}
-
-
-.form-field-currency img{
+.img-currency {
   width: 73px;
   height: 73px;
   padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.img-currency:hover {
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(2px 3px 6px #000)
 }
 
 .form-field-itens {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   margin-top: 30px;
 }
@@ -42,4 +40,9 @@
   width: 180px;
   font-size: x-large;
   border-radius: 10px;
+}
+
+.form-field-itens img {
+  width: 18px;
+  padding: 15px;  
 }
