@@ -13,6 +13,7 @@ import { CurrencyService } from './currency.service';
 import { AppComponent } from './app.component';
 import { MainCardComponent } from './main-card/main-card.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { NavCurrenciesComponent } from './nav-currencies/nav-currencies.component';
 
 //Material
 import { MatCardModule } from '@angular/material/card';
@@ -28,7 +29,8 @@ import { FormattingPipe } from './currencyformatter.pipe';
     AppComponent,
     MainCardComponent,
     CalculatorComponent,
-    FormattingPipe
+    FormattingPipe,
+    NavCurrenciesComponent
   ],
   imports: [
     BrowserModule,

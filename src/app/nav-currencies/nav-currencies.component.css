@@ -1,0 +1,23 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.form-field-currency {
+    display: flex;
+    justify-content: space-between;
+    align-items: ;
+    height: 100px;
+    margin: 15px 0 15px 0;
+  }
+
+  .form-field-itens {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .form-field-itens label {
+    font-size: x-large;
+  }

@@ -1,26 +1,8 @@
 <form class="form-container">
-  <div class="form-field-currency"> 
-    <a href="#dollar" (click)="selectedCurrency('USD')">
-      <span>{{currencySign}}:  {{resultCurrency | currency: 'USD':'symbol':'1.2-2'}}</span>
-      <img src="../assets/usa-flag.svg" class="img-currency">
-    </a>
-    <a href="#euro" (click)="selectedCurrency('EUR')">
-      <img src="../assets/euro-flag.svg" class="img-currency">
-    </a>
-    <a href="#pound" (click)="selectedCurrency('GBP')">
-      <img src="../assets/uk-flag.svg" class="img-currency">
-    </a>
-    <a href="#canada" (click)="selectedCurrency('CAD')">
-      <img src="../assets/canada-flag.svg" class="img-currency">
-    </a>
-    <a href="#autralian" (click)="selectedCurrency('AUD')">
-      <img src="../assets/australia-flag.svg" class="img-currency">
-    </a>
-  </div>
   <div class="form-field-itens">
     <mat-form-field appearance="fill">
       <mat-label>Moeda Nacional</mat-label>
-      <input matInput class="input-field" type="number" (keyup)="realCurrencyCalc($event)"  value="{{ resultCurrency }}" placeholder="{{resultCurrency | currency: 'USD':'symbol':'1.2-2'}}">  
+      <input matInput class="input-field" type="number" (keyup)="realCurrencyCalc($event)" value="{{ resultCurrency }}" placeholder="{{resultCurrency | currency: 'USD':'symbol':'1.2-2'}}">  
       <span matPrefix>BRL&nbsp;&nbsp;</span>
     </mat-form-field>
     <img src="../assets/002-exchange.svg"  >
