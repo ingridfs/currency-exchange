@@ -17,18 +17,17 @@
   width: 50%;
 }
 .card-img {
-  width: 95px;
-  height: 95px;
+  width: 60px;
+  height: 60px;
 }
 
 .card-title {
   padding: 10px;
-  margin-top: 10px;
   display: flex;
   justify-content: center;
   font-size: xx-large;
   word-wrap: break-word;
-  line-height: 42px;
+  line-height: 28px;
   color: #363062;
 }
 

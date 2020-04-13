@@ -20,11 +20,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatSelectModule } from '@angular/material/select';
 
+//Pipe
+import { FormattingPipe } from './currencyformatter.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
     MainCardComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    FormattingPipe
   ],
   imports: [
     BrowserModule,
@@ -37,6 +41,7 @@ import { MatSelectModule } from '@angular/material/select';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
+
   ],
   providers: [CurrencyService],
   bootstrap: [AppComponent]

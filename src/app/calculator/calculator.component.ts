@@ -24,7 +24,11 @@ export class CalculatorComponent implements OnInit {
         (response) => {
         this.currencyExchanges = new Object(response);
         this.currencyRate = this.currencyExchanges.rates['USD'].toFixed(2);
+        console.log();
+        
         this.currencySign = 'USD';
+        this.amount = 1;  
+        this.resultCurrency = this.amount / this.currencyRate;
         }
       ); 
   }
